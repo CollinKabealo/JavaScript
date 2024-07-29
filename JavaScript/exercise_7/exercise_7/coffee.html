@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Wake Up Cafe</title>
+    <link rel="stylesheet" href="coffee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="specials">
+        <h2 class="sp">Weekly Specials</h2>
+        <p>
+            <img src="images/mocha.jpg" alt="Mocha">
+        </p>
+        <h3>CState Mocha</h3>
+        <p class="bordera">
+            This mocha will hit all the right spots. It will get you ready for your next class. Try one today!
+        </p>
+
+        <p>
+            <img src="images/capp.jpg" alt="Cappuccino">
+        </p>
+        <h3>Pawdette Cappuccino</h3>
+        <p class="bordera">
+            Not your traditional cappuccino! We add a touch of vanilla to give this drink an added flavor. It will make you wanting more!!
+        </p>
+    </div>    
+    <section>     
+        <main>
+            <p><img src="images/logo.png" alt="Wake Up Cafe Logo"></p>
+            <h1>Welcome to the Wake Up Cafe</h1>
+            <p>
+                The Wake Up Cafe is your first stop of the day before classes. We have a variety of teas, coffees and snacks to make your morning just right. We are also open for lunch and offer a variety of sandwiches and vegetarian options. We have something available for everyone!!
+            </p>
+
+            <p>
+                If you need to work on your homework assignment or just do some studying, stop on in and use our Free WIFI. The relaxing decor will help relax your mind and get you in the right mood for studying. Each seat in our cafe has access to a plug so you can charge any device.
+            </p>
+
+            <p>
+                Our mission as the cafe is to provide you excellent customer service. We want to make your stay a memorable and we want to assure that our cafe utilizes the freshest of ingredients and we promised to continually provide globally influenced coffees and teas.
+            </p>
+
+            <h2>Upcoming Events at Wake Up Cafe</h2>
+            <p>
+                On certain days/nights we offer a variety of events that will assure that you have fun at the cafe.
+            </p>
+            <ul>
+                <li><span>Monday at 8pm - Pop Trivia</span></li>
+                <li><span>Wednesday at 6pm - Open Poetry and Spoken Word</span></li>
+                <li><span>Saturday at 11 am - Jazz Music by Mike</li>
+            </ul>
+        </main> 
+    </section>        
+    <footer>
+        &copy; 2022, <br>
+        All trademarks and registered trademarks appearing on this site are the property of their respective owners.
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('#specials').hover(function() {
+                
+                $(this).stop().animate({left: '0px'}, 'fast');
+            }, function() {
+                
+                $(this).stop().animate({left: '-270px'}, 'slow');
+            });
+        });
+    </script>
+</body>
+</html>

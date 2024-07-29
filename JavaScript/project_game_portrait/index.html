@@ -1,0 +1,53 @@
+<!-- 
+    Name: Collin M. Kabealo
+    Date: 04/27/2024
+    Class: CSCI2447, Javascript Fundamentals
+    Project 6
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Catch the Apple Game</title>
+     <!-- Link to the main stylesheet for styling the game elements -->
+     <link rel="stylesheet" href="css/game.css">
+     <!-- Importing Google Fonts for consistent typography -->
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+     <!-- Setting the favicon for the game page -->
+     <link rel="icon" type="image/png" href="favicon.png">
+ </head>
+ <body>
+     <!-- Main content container -->
+     <div id="content">
+         <!-- Game title -->
+         <h1>Catch the Apple!</h1>
+         <!-- Instructions for the game -->
+         <p id="directions">Catch as many falling apples as you can. Click 'Start' to begin the game.</p>
+         <!-- Game controls including score display and start button -->
+         <div id="controls">
+             <span id="score">0 pts</span>
+             <button type="button" id="start_button">Start!</button>
+         </div>
+         <!-- The main game space where apples appear -->
+         <div id="gamespace" style="height: 600px; width: 600px; position: relative; overflow: hidden;"></div>
+         <!-- Timer display, hidden initially -->
+         <div class="timer" style="display: none;">30 seconds left</div>
+     </div>
+     <!-- Footer section -->
+     <footer></footer> 
+     
+     <!-- Importing jQuery for easier DOM manipulation -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Link to the game logic script -->
+     <script src="js/game.js"></script>
+     <!-- Script to load external content into the footer -->
+     <script>
+         $(document).ready(function() {
+             $('footer').load('load.html'); 
+         });
+     </script>
+ </body>
+ </html>
+  
+ 

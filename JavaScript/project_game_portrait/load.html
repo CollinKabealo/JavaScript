@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Basic styles for the body to ensure consistent font and layout */
+        body {
+            font-family: Arial, sans-serif; /* Using Arial for a clean, widely supported typeface */
+        }
+    </style>
+</head>
+<body>
+    <!-- Footer content with a dynamic year insertion using JavaScript -->
+    <p style="font-size: 16px;">&copy; <span id="year"></span> CSCI 2447</p>
+    <!-- Script to dynamically update the year in the footer -->
+    <script>
+        // Function to dynamically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

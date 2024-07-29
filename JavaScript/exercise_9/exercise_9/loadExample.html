@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Tips</title>
+<link href="css/styleNews.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img src="img/logo.png" alt="JavaScript logo" class="logo" />
+        <h1>Daily JavaScript Tips</h1>
+    </header>
+    <section>
+        <article id="mainS">
+            <h2>Tip of the day</h2>
+            <ul id="tipLinks">
+                <li><a href="todayTip.html">Today&#8217;s Tip</a></li>
+                <li><a href="yesterdayTip.html">Yesterday&#8217;s Tip</a></li>
+                <li><a href="lastTip.html">Last Week&#8217;s Tip</a></li>
+            </ul>
+            <article id="tips"></article>
+        </article>
+    </section>
+    <footer>
+        <p>JavaScript Tips brought to you by Columbus State Faculty. For other tips, check out <a href="https://modernweb.com/45-javascript-tips-tricks-practices/" target="_blank">modernweb</a> website.</p>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#tipLinks a').click(function(event) {
+            event.preventDefault(); 
+            var pageUrl = $(this).attr('href'); 
+            $('#tips').load(pageUrl + ' #newTips'); 
+        });
+    }); 
+</script>
+</body>
+</html>

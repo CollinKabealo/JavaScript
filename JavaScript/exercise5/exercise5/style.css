@@ -1,0 +1,59 @@
+body{
+    background-color: #a9cb73;
+}
+#wrapper{
+    width: 450px;
+    margin:0 auto;
+    background-color: #ebecf0;
+}
+.logo{
+    display:block;
+    width: 150px;
+    margin: 0 auto;
+ 
+}
+h1{
+    text-align:center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #2d2d2d;
+    text-shadow: 1px 1px #a9cb73;
+    margin-top: -10px;
+}
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color:  #2d2d2d;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style-type:none;
+    font-family: 'Fira Sans', sans-serif;
+    height: 40px;
+    background-color: #ad2d3a;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+#gameList{
+   color: #ea3d4e;
+    padding: 5px 10px 5px 10px;
+    font-weight:bold;s
+}
+#box{
+    margin-top: 20px;
+    padding: 10px;
+    
+   
+}
+
+
+
+

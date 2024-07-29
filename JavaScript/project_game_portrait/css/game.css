@@ -1,0 +1,96 @@
+/* Import Google Fonts used throughout the game for consistent and appealing typography */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* Set base styles for the entire document to ensure the game displays correctly and attractively */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    font-family: 'Rubik', sans-serif; /* Consistent font throughout the game */
+    font-size: 16px; /* Standard font size */
+    background-color: #A2D2FF; /* Light blue background color */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Style for the main title of the game */
+h1 {
+    font-size: 24px; /* Larger font size for prominence */
+    color: #333; /* Dark grey color for readability */
+    margin: 20px; /* Space around the title */
+    text-align: center; /* Center-align the text */
+}
+
+/* Base styles for buttons to make them visually appealing and interactive */
+button {
+    font-size: 18px; /* Larger font size for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 15px 20px; /* Padding for better touch interaction */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text for contrast */
+    border: none; /* No border for a cleaner look */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons to indicate interactivity */
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Styles for the main content container to define its appearance and layout */
+div#content {
+    width: 80%; /* Take up 80% of the parent width */
+    max-width: 960px; /* Maximum width to avoid overly large layouts */
+    margin: 20px auto; /* Centering horizontally and space around */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Subtle border */
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for 3D effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Styles specific to the game control area to align items centrally */
+div#controls {
+    text-align: center; /* Center-align elements within the controls div */
+}
+
+/* Adjust button spacing within the controls area */
+div#controls button {
+    margin: 20px 10px; /* Margin around buttons for spacing */
+}
+
+/* Specific styles for the game space where gameplay occurs */
+div#gamespace {
+    width: 100%; /* Full width to utilize the space allocated by the parent */
+    height: 500px; /* Fixed height for consistency */
+    margin: 20px 0; /* Vertical margin for spacing */
+    padding: 10px; /* Padding to ensure content is not flush with edges */
+    background-color: #FFF; /* White background to highlight game elements */
+    border: 3px solid #4CAF50; /* Green border for thematic consistency */
+    position: relative; /* Relative positioning for absolutely positioned children */
+    overflow: hidden; /* Hide overflow to keep all content confined to gamespace */
+}
+
+/* Responsive styles for smaller screens to enhance mobile experience */
+@media (max-width: 768px) {
+    html, body {
+        height: auto; /* Auto height for better flow on small screens */
+        min-height: 100%; /* Minimum height to fill small screens */
+    }
+
+    div#content, div#gamespace {
+        width: 95%; /* Slightly narrower to fit small screens better */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for small screens */
+    }
+
+    button {
+        padding: 12px 18px; /* Smaller padding to fit smaller screens */
+    }
+}
